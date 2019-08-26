@@ -1,2 +1,2 @@
 # sampleProjects
-SignIn.png
+SignInScreen.png
