@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <title>Sign up</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #e7eeef;
+    }
+
+    .container {
+      width: 500px;
+      background: white;
+      margin: 0 auto;
+      box-shadow: 3px 3px 18px #b7c9cc, -3px -3px 18px #b7c9cc;
+    }
+
+    .form-container {
+      padding: 10px;
+    }
+
+    h1 {
+      font-family: OpenSans, Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      width: 50%;
+      height: 60px;
+      background: #ffffff;
+      border: 1px solid white;
+      font-size: 24px;
+      outline: none;
+      cursor: pointer;
+    }
+
+
+
+    #log-in-btn {
+      margin-left: -4px;
+      box-shadow: inset 2px 0px 3px #999;
+      background-color: #f6f3f3;
+      border-width: 0;
+
+    }
+
+    #sign-up-btn {
+      border-width: 0;
+
+    }
+
+    input {
+      height: 54px;
+      outline: none;
+      border-width: 0;
+      background-color: #f3f7f7;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      vertical-align: super;
+
+    }
+
+
+
+    .sign-up-content {
+      padding: 0 3vw;
+      height: 400px;
+    }
+
+    .log-in-content {
+      display: none;
+      padding: 0 3vw;
+      height: 400px;
+    }
+
+    .user_info {
+      height: 56px;
+      background-color: #f3f7f7;
+      align-items: center;
+      box-shadow: inset 3px 1px 20px #e7eeef;
+      margin: 1vw 0;
+    }
+
+    #btn-submit {
+      margin-left: auto;
+      display: block;
+      height: 45px;
+      width: 180px;
+      border-width: 0;
+      background-color: #1ba94c;
+      outline: none;
+      color: #e7eeef;
+      font-size: 18px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(27, 169, 76, 0.5);
+    }
+
+    #btn-submit:hover {
+      box-shadow: 0 4px 6px rgba(27, 169, 76, 0.5);
+    }
+
+    .far,
+    .fas {
+      font-size: 150%;
+      color: #b7c9cc;
+      margin: 0 1vw;
+    }
+
+    #userEmail {
+      padding: 6px;
+    }
+
+    .separator {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: darkgray;
+      margin-top: 1vw;
+      font-family: sans-serif;
+    }
+
+    hr {
+      width: 30%;
+      height: 1px;
+      align-items: center;
+    }
+
+    .platforms {
+      font-size: xx-large;
+      margin: 2vw 0;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .platforms li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    .vertical {
+      display: inline;
+      border-left: 1px solid darkgray;
+    }
+
+    .fa-facebook-square {
+      color: rgb(59, 89, 152);
+    }
+
+    .fa-facebook-square:hover {
+      color: rgb(59, 89, 152, 0.8);
+    }
+
+    .fa-google {
+      color: rgb(214, 45, 32);
+    }
+
+    .fa-google:hover {
+      color: rgb(214, 45, 32, 0.8);
+    }
+
+    .fa-linkedin {
+      color: #0077B5;
+    }
+
+    .password-forgot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .password-forgot a {
+      text-decoration: none;
+      color: #00295B;
+    }
+
+    .password-forgot #password-checkbox {
+      border: 1px solid gray;
+
+    }
+
+    .remb {
+      width: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Place Holder</h1>
+  <div class="container">
+    <button id="sign-up-btn" class="btn">Sign up</button>
+    <button id="log-in-btn" class="btn">Log in</button>
+    <div class="form-container">
+      <div class="form-button">
+
+        <div class="sign-up-content">
+
+          <div class="user_info form-input">
+            <i class="far fa-user"></i>
+            <input type="text" placeholder="First & Last name">
+          </div><!-- /user_name -->
+
+          <div class="user_info form-input">
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="Email" id="userEmail">
+          </div><!-- /Email -->
+
+          <div class="user_info form-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Your Password">
+          </div><!-- /password -->
+
+          <button id="btn-submit">Create An Account</button>
+
+          <div class="separator">
+            <hr>
+            <span>or connect with</span>
+            <hr>
+          </div><!-- /separator -->
+
+          <ul class="platforms">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <div class="vertical"></div>
+            <li><a href="#"><i class="fab fa-google"></i></a></li>
+            <div class="vertical"></div>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+
+        </div> <!-- /sign-up-content -->
+
+        <div class="log-in-content">
+          <div class="user_info form-input">
+            <i class="far fa-user"></i>
+            <input type="text" placeholder="Your user name or email">
+          </div><!-- /user_name -->
+
+          <div class="user_info form-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Your Password">
+          </div><!-- /password -->
+
+          <div class="password-forgot">
+
+            <div class="remb">
+              <input type="checkbox" id="password-checkbox" value="Remember me" />
+              Remember me
+            </div>
+
+
+
+            <a href="#">Forgot your password?</a>
+          </div>
+
+          <button id="btn-submit">Log In</button>
+
+
+          <div class="separator">
+            <hr>
+            <span>or connect with</span>
+            <hr>
+          </div><!-- /separator -->
+
+          <ul class="platforms">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <div class="vertical"></div>
+            <li><a href="#"><i class="fab fa-google"></i></a></li>
+            <div class="vertical"></div>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div><!-- /log-in-content -->
+
+
+
+      </div><!-- /form-button -->
+    </div><!-- /form-container -->
+  </div><!-- /container -->
+
+  <script>
+    let inputArray = document.querySelectorAll('.user_info');
+
+    inputArray.forEach(element => {
+      element.addEventListener('click', () => {
+        element.style['box-shadow'] = '0px 2px 0px #738f93'
+      })
+    });
+    inputArray.forEach(element => {
+      element.addEventListener('mouseout', () => {
+        element.style['box-shadow'] = 'none'
+      })
+    });
+
+    document.querySelector('#sign-up-btn').addEventListener('click', () => {
+      let btn = document.querySelector('#sign-up-btn');
+      btn.style['box-shadow'] = 'none';
+      btn.style['background-color'] = 'white';
+      document.querySelector('.sign-up-content').style.display = 'block';
+      document.querySelector('.log-in-content').style.display = 'none';
+      let lgBtn = document.querySelector('#log-in-btn');
+      lgBtn.style['box-shadow'] = 'inset 2px 0px 3px #999';
+      lgBtn.style['background-color'] = '#f6f3f3';
+    });
+
+    document.querySelector('#log-in-btn').addEventListener('click', () => {
+      let snBtn = document.querySelector('#sign-up-btn');
+      snBtn.style['box-shadow'] = 'inset -2px 0px 3px #999';
+      snBtn.style['background-color'] = '#f6f3f3';
+      document.querySelector('.sign-up-content').style.display = 'none';
+      document.querySelector('.log-in-content').style.display = 'block';
+
+      let lgBtn = document.querySelector('#log-in-btn');
+      lgBtn.style['box-shadow'] = 'none' //inset 2px 0px 3px #999'';
+      lgBtn.style['background-color'] = 'white';
+
+    });
+
+  </script>
+</body>
+
+</html>
